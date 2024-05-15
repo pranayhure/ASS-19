@@ -1,11 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Document</title>
 </head>
-<body>
 
+<body class="body">
+    <style>
+        .body {
+            background-color: black;
+        }
+
+        .parent-container {
+            top: 20px;
+            position: relative;
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+
+        }
+
+
+        .child-container {
+            border: 3px solid white;
+            padding: auto;
+            height: 350px;
+            width: 230px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            box-shadow: 2px 2px 40px 4px white;
+
+        }
+
+        .movie-name {
+            color: white;
+
+
+        }
+        .img{height: 270px;}
+    </style>
+
+    <div class="parent-container">
+
+        <div class="child-container"><img src="car-1.jpeg" class="img">
+            <p class="movie-name">The Flash</p>
+        </div>
+        <div class="child-container"><img src="car-2.jpg" class="img">
+            <p class="movie-name">The Flash</p>
+        </div>
+        <div class="child-container"><img src="car-3.jpg" class="img">
+            <p class="movie-name">The Flash</p>
+        </div>
+        <div class="child-container"><img src="car-4.jpg" class="img">
+            <p class="movie-name">The Flash</p>
+        </div>
+
+    </div>
 </body>
+
 </html>

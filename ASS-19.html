@@ -2,61 +2,227 @@
 <html lang="en">
 
 <head>
+    <title>Assignment 19 </title>
+    <style>
+        body {
+            padding: 0%;
+            margin: 0%;
+        }
 
-    <title>Document</title>
+        .profile-container {
+
+            background-color: rgb(224, 201, 170);
+            padding: 50px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            background-image: url(./road\ to\ code\ icon.png);
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        .profile-card {
+            height: 200px;
+            width: 200px;
+            background-color: lightgoldenrodyellow;
+            border: 2px solid black;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 10px;
+            margin-bottom: 60px;
+        }
+
+        .profile-pic {
+            height: 80px;
+            background-color: white;
+            border-radius: 50%;
+            position: relative;
+            border: 1px solid black;
+            left: 60px;
+            top: -60px;
+        }
+
+        .profile-name {
+            text-align: left;
+
+            position: relative;
+            bottom: 30px;
+        }
+
+        .navbar {
+            background-color: #0f172a;
+            width: 100%;
+            height: 60.5px;
+            position: sticky;
+            top: 0px;
+            display: flex;
+            justify-content: space-around;
+            Z-index: 10;
+        }
+
+        .nav-items {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+
+        }
+
+        .nav-text {
+            margin-left: 30px;
+            font-size: 20px;
+            color: white;
+        }
+
+        .img {
+            height: 30px;
+            border-radius: 50%;
+            margin-right: -20px;
+
+        }
+
+        /* Small Devices */
+        @media screen and (max-width: 600px) {
+            .profile-card {
+                height: 150px;
+                width: 100%;
+                margin-bottom: 40px;
+            }
+
+            .profile-name {
+                font-size: 20px;
+                text-align: center;
+            }
+
+            .navbar {
+                justify-content: space-evenly;
+                background-color:#0f172a;
+
+            }
+
+            .nav-text {
+                display: none;
+            }
+
+            .profile-pic {
+                margin-left: 27%;
+
+            }
+
+            .img {
+                height: 30px;
+                border-radius: 50%;
+                margin-right: auto;
+            }
+        }
+
+        /* Normal Devices */
+        @media screen and (min-width: 600px) and (max-width: 768px) {
+            .profile-name {
+                font-size: 20px;
+                text-align: center;
+            }
+
+            .profile-pic {
+                margin: auto;
+            }
+
+
+            .profile-container {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+
+            }
+
+            .profile-card {
+                width: 200px;
+                height: 100px;
+            }
+
+            .profile-name {
+                margin: auto;
+            }
+
+        }
+
+
+        /* Tablets Devices */
+        @media screen and (min-width: 769px) and (max-width: 992px) {
+            .profile-container{
+                display: flex;
+                align-items: center;
+            }
+        }
+
+        /* Large Devices */
+        @media screen and (min-width: 993px) and (max-width: 1200px) {
+            .profile-card{
+                width: 200px;
+                height: 150px;
+                margin: 0 -20px;
+                padding: 30px;
+                margin-top: 20px;
+            }
+            .profile-name{
+                font-size: 30px;
+            }
+            .profile-pic{
+                margin-top: -7px;
+            }
+            .profile-container{
+                top
+            }
+
+            
+        }
+    </style>
 </head>
 
-<body class="body">
-    <style>
-        .body {
-            background-color: black;
-        }
-
-        .parent-container {
-            top: 20px;
-            position: relative;
-            display: flex;
-            justify-content: space-evenly;
-            flex-wrap: wrap;
-
-        }
-
-
-        .child-container {
-            border: 3px solid white;
-            padding: auto;
-            height: 350px;
-            width: 230px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            box-shadow: 2px 2px 40px 4px white;
-
-        }
-
-        .movie-name {
-            color: white;
-
-
-        }
-        .img{height: 270px;}
-    </style>
-
-    <div class="parent-container">
-
-        <div class="child-container"><img src="car-1.jpeg" class="img">
-            <p class="movie-name">The Flash</p>
+<body>
+    <div class="navbar">
+        <div class="nav-items">
+            <img src="home logo.png" class="img">
+            <span class="nav-text">Home </span>
         </div>
-        <div class="child-container"><img src="car-2.jpg" class="img">
-            <p class="movie-name">The Flash</p>
+        <div class="nav-items">
+            <img src="colege logo.png" class="img">
+            <span class="nav-text">Colleges </span>
         </div>
-        <div class="child-container"><img src="car-3.jpg" class="img">
-            <p class="movie-name">The Flash</p>
+        <div class="nav-items">
+            <img src="spaceship.png" class="img">
+            <span class="nav-text">Spaceship </span>
         </div>
-        <div class="child-container"><img src="car-4.jpg" class="img">
-            <p class="movie-name">The Flash</p>
+        <div class="nav-items">
+            <img src="internship logo.png" class="img">
+            <span class="nav-text">Internship </span>
+        </div>
+        <div class="nav-items">
+            <img src="services.png" class="img">
+            <span class="nav-text">Services </span>
         </div>
 
+    </div>
+    <div class="profile-container">
+        <div class="profile-card">
+            <img src="pinki.png" alt="pinki mam photo" class="profile-pic">
+            <h1 class="profile-name">Vaibhavi Hole from road to code</h1>
+        </div>
+
+        <div class="profile-card">
+            <img src="suraj sir.jpeg" alt="suraj sir photo" class="profile-pic">
+            <h1 class="profile-name">Suraj Sir from road to code</h1>
+        </div>
+
+        <div class="profile-card">
+            <img src="vaishnavi.png" alt="vaishnavi mam photo" class="profile-pic">
+            <h1 class="profile-name">vaishnavi Hole from road to code</h1>
+        </div>
+
+        <div class="profile-card">
+            <img src="suraj sir.jpeg" alt="suraj sir photo" class="profile-pic">
+            <h1 class="profile-name">Suraj Sir from road to code</h1>
+        </div>
     </div>
 </body>
 
